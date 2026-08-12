@@ -1,0 +1,172 @@
+The visual foundation is complete and working well. Do not redesign or rebuild the existing UI.
+
+Now implement the NEXT SINGLE FEATURE:
+
+# REAL USER AUTHENTICATION + PERSISTENT PLAYER PROFILE
+
+Use Supabase for authentication and database persistence.
+
+Before making changes:
+1. Inspect the existing codebase.
+2. Understand the current mock-data structure and reusable components.
+3. Preserve the existing visual design and navigation.
+4. Do not remove working functionality.
+
+## Authentication
+
+Implement real Supabase authentication with:
+
+- Email
+- Password
+- Sign up
+- Log in
+- Log out
+- Protected dashboard routes
+- Persistent sessions
+
+Use secure server/client patterns appropriate for the current React/Vite architecture.
+
+Do NOT expose secret Supabase credentials in client-side code.
+
+Use environment variables.
+
+## PLAYER PROFILE DATABASE
+
+Create the minimum database structure needed for a player profile.
+
+A player should have:
+
+- id
+- user_id
+- display_name
+- username
+- profile_image_url
+- position
+- grade
+- team
+- height
+- bio
+- created_at
+- updated_at
+
+Use appropriate Supabase Row Level Security so users can only modify their own private player data.
+
+Public profile information can be read publicly only where appropriate.
+
+## SIGN-UP FLOW
+
+Change the existing sign-up UI so it actually works.
+
+Flow:
+
+Sign Up
+↓
+Create Supabase account
+↓
+Create player profile
+↓
+Redirect to dashboard
+
+Do not create duplicate profiles if the user refreshes or repeats the flow.
+
+Validate:
+- email
+- password
+- username
+- display name
+
+Show clear loading and error states.
+
+## LOGIN FLOW
+
+Change the existing login UI so it actually works.
+
+Flow:
+
+Login
+↓
+Supabase authentication
+↓
+Load player profile
+↓
+Dashboard
+
+If the user does not have a player profile yet, send them through profile creation rather than showing broken/empty data.
+
+## PROFILE PAGE
+
+Replace the mock player information with the authenticated user's real profile.
+
+Allow the user to edit:
+
+- Display name
+- Username
+- Position
+- Grade
+- Team
+- Height
+- Bio
+
+Do not build image uploading yet unless it is very simple and reliable. A placeholder image is fine for this stage.
+
+## DASHBOARD
+
+Replace the fake player name with the real player's name.
+
+Keep the existing visual design.
+
+For statistics and OVR, continue using mock values for now because the real stats system is a later feature.
+
+Clearly separate mock statistics from real user profile data in the code.
+
+## IMPORTANT SCOPE LIMIT
+
+Do NOT build yet:
+
+- Game logging
+- Real statistics
+- OVR calculations
+- XP
+- Achievements
+- Card collection database
+- Pack opening
+- Payments
+- AI
+- Social features
+- Highlights
+- Pickup games
+
+Only build:
+
+AUTHENTICATION + PERSISTENT PLAYER PROFILE.
+
+## TESTING
+
+After implementation:
+
+1. Run the app.
+2. Test creating a new account.
+3. Test logging out.
+4. Test logging back in.
+5. Verify the player profile persists after refresh.
+6. Test editing the profile.
+7. Test invalid login.
+8. Test invalid form input.
+9. Test protected routes.
+10. Check mobile layout.
+11. Check desktop layout.
+12. Check browser console for errors.
+13. Check TypeScript/build errors.
+14. Check that no secrets are exposed.
+
+Fix any problems you find.
+
+Do not move on to another major feature after this.
+
+When finished, tell me:
+- What was implemented
+- What database tables/RLS policies were created
+- What I need to configure in Supabase
+- What I should manually test
+
+Then stop.
