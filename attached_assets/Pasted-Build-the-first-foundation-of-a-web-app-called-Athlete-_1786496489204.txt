@@ -1,0 +1,312 @@
+Build the first foundation of a web app called **Athlete Hub**.
+
+Athlete Hub is a mobile-first basketball career and collectible-card platform. The long-term product will let basketball players track their stats, calculate an estimated OVR, earn XP and achievements, earn collectible card packs, open animated packs, and build a digital collection of their career.
+
+For THIS TASK ONLY, build the polished website foundation. Do not build the full product yet.
+
+## TECHNICAL REQUIREMENTS
+
+Use:
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* A clean component-based architecture
+* Responsive design for iPhone, Android, tablet, and desktop
+* Motion/Framer Motion for subtle UI animations if appropriate
+
+Do not add payments, AI, pack-opening logic, complex statistics, or social features yet.
+
+## BRAND / DESIGN
+
+Create an original visual identity for Athlete Hub.
+
+The website should feel like:
+
+* A premium basketball video game
+* A collectible card game
+* A modern sports application
+
+It should NOT look like a generic SaaS dashboard.
+
+Design direction:
+
+* Dark premium background
+* Basketball-inspired visual details
+* Strong typography
+* Large athletic numbers
+* Subtle court-line/texture elements
+* Cards with depth
+* Smooth hover/tap animations
+* Premium but not cluttered
+* Mobile-first
+
+Use CSS variables/design tokens so the visual system can easily be changed later.
+
+Do not copy the exact branding, logos, assets, or UI of NBA 2K or any other existing product.
+
+## PAGES TO BUILD
+
+Build ONLY these pages:
+
+### 1. Landing page
+
+Create a polished marketing homepage.
+
+Hero section:
+
+ATHLETE HUB
+
+"Turn your basketball journey into a career."
+
+Supporting text explaining that players can track their progress, build their player identity, and eventually collect career cards.
+
+Primary button:
+"Create Your Player"
+
+Secondary button:
+"See How It Works"
+
+Add a visually impressive example basketball player card as a mockup.
+
+Include sections for:
+
+* Track Your Game
+* Build Your OVR
+* Collect Your Career
+* Earn Achievements
+
+End with a strong CTA to create a player.
+
+The landing page should feel like a real product that could eventually be launched publicly.
+
+### 2. Login page
+
+Create a polished login screen.
+
+Fields:
+
+* Email
+* Password
+
+Buttons:
+
+* Log In
+* Continue to Sign Up
+
+This can be UI-only for now. Do not build the full authentication system yet.
+
+### 3. Sign-up page
+
+Fields:
+
+* Email
+* Password
+* Display name
+* Username
+
+Button:
+"Create Player"
+
+Again, UI only for this stage.
+
+### 4. Dashboard shell
+
+Create a logged-in-looking dashboard using realistic mock data.
+
+Do NOT connect it to a database yet.
+
+Show:
+
+PLAYER CARD
+
+LINCOLN
+
+78 OVR
+
+PG
+
+★★★★ EST.
+
+14.2 PPG
+4.8 RPG
+5.1 APG
+
+Also show:
+
+LEVEL 8
+XP PROGRESS
+
+Recent Game
+
+18 PTS
+7 REB
+6 AST
+
+Navigation should include:
+
+Home
+Games
+Collection
+Stats
+Profile
+
+On mobile, use a bottom navigation bar.
+
+On desktop, use a sidebar or appropriate responsive navigation.
+
+### 5. Profile page
+
+Create a polished player profile using mock data.
+
+Show:
+
+* Profile photo placeholder
+* Player name
+* Username
+* Position
+* Grade
+* Team
+* OVR
+* Basic statistics
+* Achievements section
+* Player card
+
+### 6. Collection page
+
+Create a visually impressive mock collectible-card collection.
+
+Show:
+
+COLLECTION
+
+18 / 100 CARDS
+
+Create several fictional example cards with different rarities:
+
+Common
+Rare
+Epic
+Elite
+Legendary
+
+The cards are visual placeholders only at this stage.
+
+Add filter buttons for rarity.
+
+Do NOT build real pack logic yet.
+
+## PLAYER CARD DESIGN
+
+Make the player card one of the strongest visual elements.
+
+It should include:
+
+* Player photo placeholder
+* Player name
+* Position
+* OVR
+* Estimated star tier
+* Main stats
+* Card rarity
+* Season/year
+
+Create it as a reusable component so we can later use the same component for real player data.
+
+## ANIMATION
+
+Use animation intentionally.
+
+Add:
+
+* Page transitions where appropriate
+* Card hover/tap effects
+* Subtle card shine
+* Button interactions
+* XP progress animation
+* Smooth navigation transitions
+
+Do NOT add excessive animations.
+
+Make sure animations respect reduced-motion preferences.
+
+## MOBILE-FIRST REQUIREMENT
+
+Design the interface for a phone FIRST.
+
+It must look excellent at approximately 390px wide.
+
+Then make it responsive for larger screens.
+
+Do not simply shrink a desktop interface down to mobile.
+
+## CODE QUALITY
+
+Use:
+
+* Reusable components
+* TypeScript
+* Clear folder structure
+* No giant monolithic components
+* No unnecessary dependencies
+* No hardcoded secrets
+* Clean naming
+
+Create reusable components such as:
+
+PlayerCard
+StatCard
+XPProgress
+AchievementCard
+CollectionCard
+Navigation
+Button
+
+Use mock data in a clearly separated location so we can replace it with Supabase later.
+
+## IMPORTANT
+
+Do NOT build:
+
+* Supabase
+* Authentication backend
+* Payments
+* Ollama
+* AI
+* Pack-opening system
+* Real OVR calculations
+* Real game statistics
+* Pickup games
+* Social networking
+* Video uploads
+
+Those will be separate development stages.
+
+The goal of this task is to establish the **visual foundation and navigation structure** of Athlete Hub.
+
+## BEFORE FINISHING
+
+Run the application and inspect the actual result.
+
+Fix:
+
+* Build errors
+* TypeScript errors
+* Broken navigation
+* Overflow
+* Mobile layout problems
+* Obvious spacing problems
+* Animation issues
+
+Make sure the app can actually run.
+
+Do not just describe what you would build. **Build this first foundation now.**
+
+When finished, give me:
+
+1. A short summary of what you built
+2. The pages/components created
+3. Any issues or decisions I need to know about
+4. What you recommend building next
+
+Then stop. Do not automatically start the next major feature.

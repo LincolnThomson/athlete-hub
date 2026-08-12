@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Athlete Hub"
+description = "A premium mobile-first basketball career and collectible-card experience with player identity, progress, achievements, and a visual card collection foundation."
+version = "1.0.0"
+id = "artifacts/athlete-hub"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25301
+
+[services.development]
+run = "pnpm --filter @workspace/athlete-hub run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/athlete-hub", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/athlete-hub/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25301"
+BASE_PATH = "/"
