@@ -9,6 +9,7 @@ import { Login, Signup } from '@/pages/auth';
 import Dashboard from '@/pages/dashboard';
 import Profile from '@/pages/profile';
 import Collection from '@/pages/collection';
+import Leaderboard from '@/pages/leaderboard';
 import {
   Route,
   Switch,
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/profile" component={Profile} />
         <Route path="/collection" component={Collection} />
+        <Route path="/leaderboard" component={Leaderboard} />
         <Route component={NotFound} />
       </Switch>
     </RoutedErrorBoundary>

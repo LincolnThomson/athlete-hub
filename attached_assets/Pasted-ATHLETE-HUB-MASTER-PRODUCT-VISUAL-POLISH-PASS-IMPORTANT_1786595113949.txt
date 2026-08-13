@@ -1,0 +1,1289 @@
+ATHLETE HUB — MASTER PRODUCT + VISUAL POLISH PASS
+
+IMPORTANT:
+This is a refinement and product-foundation pass on the EXISTING Athlete Hub application.
+
+DO NOT rebuild the application from scratch.
+DO NOT replace the existing tech stack.
+DO NOT delete working components.
+DO NOT remove existing routes.
+DO NOT break existing functionality.
+
+First inspect the current project, components, routes, styling, and design system.
+
+Then improve the existing application systematically.
+
+==================================================
+1. ATHLETE HUB PRODUCT VISION
+==================================================
+
+Athlete Hub is a gamified basketball career platform.
+
+The long-term product should allow basketball players to:
+
+- Create their basketball player
+- Build a player identity
+- Track real games
+- Record statistics
+- See statistics improve over time
+- Receive an estimated OVR
+- Earn XP
+- Level up
+- Earn achievements
+- Build a collectible card collection
+- Open animated card packs
+- Compete on leaderboards
+- Compare progress with other players
+- Eventually receive AI-powered basketball insights
+
+The product should feel like:
+
+PREMIUM BASKETBALL VIDEO GAME
++
+COLLECTIBLE CARD GAME
++
+PLAYER DEVELOPMENT PLATFORM
++
+SOCIAL COMPETITION
+
+It should be exciting to a teenage/high-school basketball player.
+
+The core emotional loop is:
+
+CREATE PLAYER
+↓
+PLAY BASKETBALL
+↓
+LOG PERFORMANCE
+↓
+IMPROVE
+↓
+INCREASE OVR
+↓
+EARN XP
+↓
+UNLOCK ACHIEVEMENTS
+↓
+EARN / COLLECT CARDS
+↓
+CLIMB THE LEADERBOARD
+↓
+KEEP PLAYING
+
+==================================================
+2. IMPORTANT SCOPE RULE
+==================================================
+
+This pass is primarily UI/UX and product structure.
+
+DO NOT implement:
+
+- Real payment processing
+- Stripe
+- PayPal
+- Credit-card collection
+- Real subscription billing
+- Payment webhooks
+- Real transactions
+- AI APIs
+- Real social networking
+- Production multiplayer
+- Real competitive ranking infrastructure
+
+Use mock/local data where necessary.
+
+Do NOT pretend mock functionality is real.
+
+Clearly label unfinished systems as:
+"Coming Soon"
+or
+"Preview"
+
+If a feature does not have a real backend yet, make the UI ready for it without falsely claiming it works.
+
+==================================================
+3. COMPLETE VISUAL IDENTITY
+==================================================
+
+The current orange/white-heavy design feels too basic.
+
+Create a sophisticated visual system.
+
+The target is:
+
+PREMIUM
+CINEMATIC
+ATHLETIC
+GAME-LIKE
+MODERN
+ORIGINAL
+
+Do NOT make it look like:
+
+- Generic SaaS
+- Corporate fitness software
+- Basic sports website
+- NBA 2K
+- NBA Ultimate Team
+- FIFA Ultimate Team
+- Another existing game's UI
+
+Take inspiration from the quality level of premium sports games, but create an ORIGINAL Athlete Hub identity.
+
+==================================================
+4. COLOR SYSTEM
+==================================================
+
+Move away from orange/white dominance.
+
+Use a dark cinematic foundation.
+
+Primary background:
+Very deep navy / almost-black navy
+
+Secondary background:
+Dark blue-gray
+
+Primary surface:
+Deep slate/navy
+
+Elevated surface:
+Slightly lighter navy with subtle transparency
+
+Primary accent:
+Electric blue / vivid blue
+
+Secondary accent:
+Purple / violet
+
+Highlight:
+Controlled orange/gold
+
+Main text:
+Warm white / soft white
+
+Secondary text:
+Cool gray
+
+Success:
+Clean green
+
+Orange/gold should be an ACCENT, not the primary interface color.
+
+Use centralized CSS variables/design tokens.
+
+Do not scatter random colors throughout components.
+
+The palette should feel cohesive.
+
+==================================================
+5. BACKGROUND
+==================================================
+
+Create subtle atmospheric backgrounds.
+
+Use combinations of:
+
+- Deep navy gradients
+- Soft blue radial lighting
+- Subtle violet lighting
+- Very subtle basketball-court line patterns
+- Extremely subtle particles in selected hero sections
+
+Do NOT make the background distracting.
+
+Do NOT use stock-photo backgrounds.
+
+The interface should feel cinematic without becoming cheesy.
+
+==================================================
+6. DEPTH + SURFACES
+==================================================
+
+Create visual hierarchy:
+
+BACKGROUND
+↓
+AMBIENT LIGHT
+↓
+SURFACES
+↓
+CARDS
+↓
+STATISTICS
+↓
+INTERACTIVE ELEMENTS
+
+Use:
+
+- Subtle borders
+- Layered surfaces
+- Transparency
+- Soft shadows
+- Controlled glow
+- Gradients
+- Depth
+
+Avoid excessive glassmorphism.
+
+Avoid excessive neon.
+
+Avoid excessive shadows.
+
+==================================================
+7. HERO SECTION
+==================================================
+
+Make the landing page feel like the opening screen of a premium basketball game.
+
+Keep the existing strong typography if it works.
+
+Hero headline should communicate the product immediately.
+
+Use:
+
+TURN YOUR
+BASKETBALL
+JOURNEY
+INTO A
+CAREER.
+
+Supporting copy:
+
+"Athlete Hub lets basketball players track their game, build their player profile, level up, compete, and collect cards representing their basketball journey."
+
+Primary CTA:
+
+CREATE YOUR PLAYER
+
+Secondary CTA:
+
+SEE HOW IT WORKS
+
+==================================================
+8. HERO PLAYER CARD
+==================================================
+
+Make the player card the visual centerpiece.
+
+Example mock data:
+
+ATHLETE HUB
+
+LINCOLN
+78 OVR
+PG
+
+★★★★ EST.
+
+14.2 PPG
+4.8 RPG
+5.1 APG
+
+SEASON 2026
+
+Use fictional/mock data only.
+
+The card should have:
+
+- Premium frame
+- Layered gradients
+- Depth
+- Subtle glow
+- High-quality typography
+- Animated shine
+- Subtle perspective
+- Subtle 3D tilt
+- Light reflection
+- Small particles/light effects behind it
+
+The card should look collectible.
+
+On desktop:
+
+Hover:
+- Slight 3D tilt
+- Light reflection
+- Shine sweep
+- Small lift
+
+On mobile:
+
+- Entrance animation
+- Tap feedback
+- No dependence on hover
+
+Respect prefers-reduced-motion.
+
+==================================================
+9. CARD SYSTEM
+==================================================
+
+Cards are a CORE part of Athlete Hub.
+
+Create a reusable PlayerCard component.
+
+Card rarities:
+
+COMMON
+RARE
+EPIC
+ELITE
+LEGENDARY
+
+Do not differentiate rarities using color alone.
+
+Use:
+
+- Borders
+- Textures
+- Glow
+- Frame details
+- Typography
+- Background effects
+- Small animations
+
+Keep the visual language consistent.
+
+Cards should feel physical and collectible.
+
+==================================================
+10. CARD COLLECTION
+==================================================
+
+The collection page should feel like a digital basketball card binder.
+
+Improve:
+
+- Card grid
+- Search
+- Filters
+- Rarity filtering
+- Card spacing
+- Card hover
+- Card reveal
+- Collection progress
+
+Display collection progress such as:
+
+COLLECTION
+24 / 100 CARDS
+
+Add visual progression.
+
+Create empty states.
+
+Example:
+
+YOUR CAREER STARTS HERE.
+
+Start playing to earn your first card.
+
+==================================================
+11. CARD SHOWCASE
+==================================================
+
+Add/refine a landing-page section:
+
+YOUR CAREER.
+COLLECTED.
+
+Explain that players can eventually collect cards representing:
+
+- Seasons
+- Achievements
+- Milestones
+- Performance
+- Special moments
+
+Show 3–4 fictional cards:
+
+COMMON
+RARE
+EPIC
+LEGENDARY
+
+These are visual mockups only.
+
+Do not implement real pack logic in this pass.
+
+==================================================
+12. CARD PACK PREVIEW
+==================================================
+
+Create a visual preview of the future pack-opening experience.
+
+Example:
+
+ATHLETE PACK
+
+[ OPEN PACK ]
+
+This is only a visual preview.
+
+Do NOT implement purchases.
+
+Do NOT implement gambling mechanics.
+
+Do NOT make cards have monetary value.
+
+The experience should feel like a fun collectible/reward reveal rather than gambling.
+
+Use tasteful animation:
+
+- Pack entrance
+- Glow
+- Opening transition
+- Card reveal
+- Shine
+
+Clearly label unfinished functionality as a preview if necessary.
+
+==================================================
+13. DASHBOARD
+==================================================
+
+Make the dashboard feel like the home screen of a basketball game.
+
+Prioritize:
+
+1. Player Card
+2. OVR
+3. Level / XP
+4. Recent Performance
+5. Key Statistics
+6. Achievements
+7. Collection Progress
+8. Leaderboard Position
+
+Example:
+
+78 OVR
+LEVEL 8
+
+1,240 / 1,500 XP
+
+RECENT PERFORMANCE
+
+14.2 PPG
+4.8 RPG
+5.1 APG
+52% FG
+
+Use mock data.
+
+Do not fake real statistics.
+
+==================================================
+14. OVR DISPLAY
+==================================================
+
+Make OVR one of the strongest visual elements.
+
+Example:
+
+78
+OVR
+
+PG
+
+★★★★ EST.
+
+Use a premium ring/badge treatment.
+
+Animate the OVR number subtly when the dashboard loads.
+
+The number itself should NOT artificially change.
+
+The animation only presents the existing value.
+
+==================================================
+15. XP + LEVEL SYSTEM UI
+==================================================
+
+Create a game-style progression display.
+
+Example:
+
+LEVEL 8
+
+1,240 / 1,500 XP
+
+[████████████░░]
+
+Animate the progress fill smoothly.
+
+Use a premium progression visual.
+
+==================================================
+16. STATISTICS
+==================================================
+
+Make statistics feel important.
+
+Use:
+
+- Large numbers
+- Clear labels
+- Small trend indicators
+- Strong hierarchy
+- Subtle gradients
+- Clean spacing
+
+Examples:
+
+14.2
+PPG
+
+4.8
+RPG
+
+5.1
+APG
+
+52%
+FG
+
+Do not overwhelm the dashboard with charts.
+
+==================================================
+17. ACHIEVEMENTS
+==================================================
+
+Create polished achievement cards.
+
+Examples:
+
+FIRST GAME
+10 GAMES
+DOUBLE-DOUBLE
+HOT STREAK
+CLUTCH PLAYER
+100 POINTS
+LEVEL 10
+
+Use locked/unlocked visual states.
+
+Locked achievements should look interesting without being frustrating.
+
+Add subtle reveal animations.
+
+==================================================
+18. LEADERBOARD
+==================================================
+
+ADD A NEW LEADERBOARD EXPERIENCE.
+
+This should become one of the major Athlete Hub features.
+
+Create a dedicated:
+
+LEADERBOARD
+
+page/screen.
+
+Also show a small leaderboard preview on the dashboard.
+
+The leaderboard should feel competitive and game-like.
+
+Use mock data.
+
+Example:
+
+ATHLETE HUB LEADERBOARD
+
+1   Jordan M.     92 OVR
+2   Marcus T.      89 OVR
+3   Alex R.        86 OVR
+4   Lincoln        78 OVR
+5   Jayden K.      77 OVR
+
+Use fictional names/data.
+
+DO NOT imply these are real users.
+
+Include:
+
+- Rank number
+- Player avatar/card
+- Player name
+- Position
+- OVR
+- Level
+- Optional XP
+- Rank movement indicator
+
+Highlight the current player.
+
+Example:
+
+YOU
+#4
+78 OVR
+
+The current player's row should be visually distinct.
+
+==================================================
+19. LEADERBOARD FILTERS
+==================================================
+
+Prepare UI for future filters.
+
+Possible tabs:
+
+GLOBAL
+LOCAL
+SCHOOL
+FRIENDS
+
+For now, these can use mock data or display:
+
+COMING SOON
+
+Do not pretend these filters connect to real data.
+
+Also prepare visual sorting concepts:
+
+OVR
+XP
+PPG
+APG
+RPG
+
+Again, mock data only.
+
+==================================================
+20. LEADERBOARD DESIGN
+==================================================
+
+Top 3 should receive special visual treatment.
+
+Rank 1:
+Premium gold treatment
+
+Rank 2:
+Silver treatment
+
+Rank 3:
+Bronze treatment
+
+Do not make this overly shiny.
+
+Use:
+
+- Rank badges
+- Player cards/avatars
+- OVR
+- Subtle glow
+- Clean spacing
+
+Add subtle entrance animations.
+
+Example:
+
+#1 rises into place
+#2 and #3 follow
+
+Do not make animations slow.
+
+==================================================
+21. LEADERBOARD MOTIVATION
+==================================================
+
+Show a small progression indicator.
+
+Example:
+
+YOU ARE
+12 OVR
+AWAY FROM
+THE NEXT RANK
+
+Or:
+
+3 SPOTS
+TO #1
+
+This should motivate players without shaming lower-ranked users.
+
+==================================================
+22. NAVIGATION
+==================================================
+
+Improve the existing navigation.
+
+Conceptual structure:
+
+HOME
+GAMES
+STATS
+LEADERBOARD
+COLLECTION
+PROFILE
+
+Desktop:
+Clean sidebar.
+
+Mobile:
+Polished bottom navigation.
+
+If all six items cannot fit comfortably on mobile, prioritize the most important items and place secondary navigation inside a More menu.
+
+Use:
+
+- Icons
+- Labels
+- Active indicators
+- Smooth transitions
+- Comfortable touch targets
+
+Do not create tiny buttons.
+
+==================================================
+23. FEATURE SECTION
+==================================================
+
+Create/refine four core pillars:
+
+01 — TRACK YOUR GAME
+
+Log games and build your real basketball statistics.
+
+02 — BUILD YOUR OVR
+
+Turn your performance into an evolving player rating.
+
+03 — LEVEL UP
+
+Earn XP, achievements, and milestones.
+
+04 — COMPETE + COLLECT
+
+Climb the leaderboard and collect cards representing your basketball journey.
+
+Each should have a unique visual treatment.
+
+On hover:
+
+- Slight lift
+- Border emphasis
+- Subtle glow
+- Icon animation
+
+==================================================
+24. MICROINTERACTIONS
+==================================================
+
+Add tasteful microinteractions throughout:
+
+Buttons:
+- Hover
+- Press
+- Focus
+- Disabled
+
+Cards:
+- Lift
+- Tilt
+- Reflection
+- Shadow change
+
+Tabs:
+- Animated active indicator
+
+Filters:
+- Smooth transitions
+
+Navigation:
+- Animated active state
+
+XP:
+- Smooth progress animation
+
+Achievements:
+- Subtle reveal
+
+Leaderboard:
+- Staggered entrance
+
+Do not animate everything constantly.
+
+==================================================
+25. PAGE TRANSITIONS
+==================================================
+
+Add fast page transitions:
+
+- Fade
+- Slight vertical movement
+- Opacity
+
+Keep them fast.
+
+Navigation should never feel slow.
+
+==================================================
+26. SCROLL ANIMATIONS
+==================================================
+
+Landing-page sections should reveal naturally.
+
+Hero:
+Fade/slide
+
+Features:
+Staggered cards
+
+Card showcase:
+Sequential reveal
+
+Leaderboard preview:
+Subtle entrance
+
+CTA:
+Subtle entrance
+
+Animations should generally happen once.
+
+==================================================
+27. MOBILE EXPERIENCE
+==================================================
+
+Mobile is extremely important.
+
+Test around:
+
+390px width.
+
+There must be:
+
+NO horizontal scrolling.
+
+Ensure:
+
+- Cards maintain proportions
+- Text remains readable
+- Buttons are large enough
+- Navigation is usable
+- Leaderboard rows remain readable
+- Animations remain performant
+- Hero card remains impressive
+- No desktop layout simply squeezed into mobile
+
+Recompose layouts when necessary.
+
+==================================================
+28. EMPTY STATES
+==================================================
+
+Create polished empty states.
+
+Examples:
+
+NO GAMES YET
+
+"Your career starts here."
+
+[LOG YOUR FIRST GAME]
+
+NO CARDS YET
+
+"Play your first games to start building your collection."
+
+NO ACHIEVEMENTS YET
+
+"Keep playing. Your first milestone is waiting."
+
+These should feel encouraging.
+
+==================================================
+29. LOADING STATES
+==================================================
+
+Create polished skeleton/loading states where appropriate.
+
+Avoid blank spaces.
+
+==================================================
+30. ATHLETE HUB PRO MONETIZATION FOUNDATION
+==================================================
+
+Create the PRODUCT STRUCTURE for a future freemium model.
+
+Do NOT implement real payments.
+
+Do NOT connect Stripe.
+
+Do NOT collect payment information.
+
+Do NOT create fake transactions.
+
+FREE users should eventually receive:
+
+- Player profile
+- Basic player card
+- Basic game logging
+- Basic statistics
+- Basic OVR
+- XP
+- Levels
+- Basic achievements
+- Basic collection
+- Limited free rewards/packs
+- Leaderboard participation
+
+ATHLETE HUB PRO will eventually be approximately:
+
+$4.99 / month
+
+Potential annual:
+
+$29.99 / year
+
+Store pricing in one centralized configuration value.
+
+==================================================
+31. ATHLETE HUB PRO FEATURES
+==================================================
+
+Potential Pro features:
+
+- Unlimited game history
+- Advanced statistics
+- Advanced OVR breakdown
+- Advanced progression analytics
+- Expanded collection
+- Premium card designs
+- Additional rewards
+- Career analytics
+- Future AI basketball insights
+- Additional customization
+
+If something isn't implemented yet:
+
+SHOW "COMING SOON"
+
+Do NOT fake functionality.
+
+==================================================
+32. PRO UPGRADE UI
+==================================================
+
+Create reusable Pro upgrade components.
+
+Example:
+
+ATHLETE HUB PRO
+
+Take your basketball journey further.
+
+✓ Advanced statistics
+✓ Unlimited game history
+✓ Advanced analytics
+✓ Premium cards
+✓ Additional rewards
+✓ Future AI insights
+
+$4.99 / MONTH
+
+$29.99 / YEAR
+
+[UPGRADE TO PRO]
+
+These buttons must NOT process payments yet.
+
+They should lead to a clean:
+
+ATHLETE HUB PRO
+COMING SOON
+
+screen/modal.
+
+==================================================
+33. FREE VS PRO
+==================================================
+
+Create a polished comparison.
+
+FREE
+
+✓ Player profile
+✓ Basic stats
+✓ Basic OVR
+✓ XP & levels
+✓ Achievements
+✓ Collection
+✓ Leaderboards
+
+PRO
+
+✓ Everything in Free
+✓ Advanced stats
+✓ Unlimited history
+✓ Advanced analytics
+✓ Premium cards
+✓ Additional rewards
+✓ Future AI insights
+
+Do NOT make Free look bad.
+
+The free experience should genuinely be useful.
+
+==================================================
+34. FEATURE GATING ARCHITECTURE
+==================================================
+
+Create centralized feature-gating logic.
+
+Conceptually:
+
+isProUser
+canUseFeature(feature)
+
+Use mock subscription state for now.
+
+Provide a development-only way to test:
+
+FREE USER
+
+and
+
+PRO USER
+
+Do not allow users to falsely obtain Pro in production.
+
+Keep the logic centralized.
+
+==================================================
+35. PROFILE / ACCOUNT UI
+==================================================
+
+Add subscription information to profile/settings.
+
+Free:
+
+PLAN
+FREE
+
+[VIEW ATHLETE HUB PRO]
+
+Pro:
+
+ATHLETE HUB PRO
+ACTIVE
+
+[MANAGE PLAN]
+
+UI only.
+
+==================================================
+36. DESIGN SYSTEM
+==================================================
+
+Create reusable design tokens for:
+
+- Colors
+- Spacing
+- Border radius
+- Shadows
+- Typography
+- Animation timing
+- Card rarity
+- Buttons
+- Surfaces
+
+Do not hardcode the same styles repeatedly.
+
+Keep components reusable.
+
+==================================================
+37. TYPOGRAPHY
+==================================================
+
+Create a strong hierarchy.
+
+Use:
+
+- Athletic display typography
+- Clean modern body typography
+- Large numeric displays
+- Tight tracking for labels
+
+Do not use too many fonts.
+
+Statistics should feel powerful.
+
+==================================================
+38. PERFORMANCE
+==================================================
+
+Keep animations performant.
+
+Prefer:
+
+- transform
+- opacity
+- CSS animations
+- lightweight Motion animations
+
+Avoid huge image assets.
+
+Avoid expensive effects everywhere.
+
+==================================================
+39. ACCESSIBILITY
+==================================================
+
+Maintain:
+
+- Keyboard navigation
+- Visible focus states
+- Proper contrast
+- Semantic buttons
+- Accessible labels
+- Reduced-motion support
+
+==================================================
+40. ORIGINALITY
+==================================================
+
+Do not copy another game's:
+
+- Exact card design
+- Exact terminology
+- Exact layouts
+- Exact icons
+- Exact branding
+- Assets
+- Visual identity
+
+Athlete Hub needs its own identity.
+
+==================================================
+41. CURRENT FUNCTIONALITY
+==================================================
+
+Preserve the existing:
+
+- Landing page
+- Login page
+- Signup page
+- Dashboard
+- Profile
+- Collection
+- Navigation
+- Collection filters
+- Search
+- Existing mock data
+- Existing interactions
+
+Do not unnecessarily rewrite functioning components.
+
+==================================================
+42. NO BACKEND CHANGES
+==================================================
+
+For this pass:
+
+DO NOT add:
+
+- Supabase
+- Database
+- Authentication
+- Payments
+- AI
+- Real leaderboards
+- Real multiplayer
+- Real game statistics
+
+The leaderboard should use clearly fictional/mock data.
+
+The Pro system should use mock subscription state.
+
+==================================================
+43. RESPONSIVE QA
+==================================================
+
+Test:
+
+390px mobile
+Tablet
+Desktop
+
+Check:
+
+- No horizontal overflow
+- No clipped cards
+- No broken text
+- No overlapping buttons
+- No broken navigation
+- Leaderboard remains usable
+- Collection remains usable
+- Hero remains impressive
+
+==================================================
+44. FINAL QA
+==================================================
+
+After implementation:
+
+1. Run the application.
+2. Check landing page.
+3. Check dashboard.
+4. Check profile.
+5. Check collection.
+6. Check leaderboard.
+7. Check login.
+8. Check signup.
+9. Check mobile at approximately 390px.
+10. Check desktop.
+11. Test navigation.
+12. Test card interactions.
+13. Test leaderboard interactions.
+14. Test animations.
+15. Test reduced-motion behavior.
+16. Test Free user state.
+17. Test Pro mock state.
+18. Test feature gates.
+19. Check browser console.
+20. Check TypeScript/build errors.
+21. Check for horizontal overflow.
+22. Fix any issues discovered.
+
+==================================================
+45. IMPORTANT STOP CONDITION
+==================================================
+
+After completing this pass:
+
+STOP.
+
+Do NOT automatically begin:
+
+- Supabase authentication
+- Real game logging
+- Real statistics
+- Real OVR calculations
+- AI
+- Real leaderboard infrastructure
+- Stripe
+- Payments
+- Subscription billing
+- Pack-opening backend
+
+Those will be separate future stages.
+
+Give me a concise final report containing:
+
+1. New color system
+2. Major visual improvements
+3. Animations added
+4. Card improvements
+5. Leaderboard improvements
+6. Free/Pro structure
+7. Components created/modified
+8. Responsive testing results
+9. Errors found and fixed
+10. What remains for the next development stage
+
+Then wait for my next instruction.
