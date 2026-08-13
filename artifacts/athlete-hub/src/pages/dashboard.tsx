@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowUpRight, CalendarDays, ChevronRight, Flame, Gamepad2, MoreHorizontal, Plus, Trophy } from 'lucide-react';
-import { Link } from 'wouter';
+import { Link } from 'wouter'; from 'wouter';
 import { useState } from 'react';
 import { achievements, leaderboard, player, recentGame } from '@/data/mock-data';
 import { AchievementCard, AppShell, Button, LeaderboardRow, PlayerCard, ProUpgradeCard, StatCard, XPProgress } from '@/components/athlete-ui';
@@ -14,6 +14,6 @@ export default function Dashboard() {
     <section className="mt-5 surface-elevated rounded-2xl border border-[hsl(var(--border))] p-5 sm:p-7"><div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-end"><div><p className="font-mono text-[10px] uppercase tracking-[.2em] text-[hsl(var(--primary))]">Competitive preview</p><h2 className="mt-1 font-display text-3xl font-bold uppercase">Leaderboard position</h2><p className="mt-1 text-xs text-[hsl(var(--muted-foreground))]">Fictional rankings while the competitive layer is in development.</p></div><Link href="/leaderboard" className="inline-flex items-center gap-1 text-xs font-bold text-[hsl(var(--primary))]">View full leaderboard <ChevronRight size={14} /></Link></div><div className="animate-stagger mt-5 grid gap-2">{leaderboard.slice(0, 3).map(entry => <LeaderboardRow key={entry.rank} entry={entry} />)}<LeaderboardRow entry={leaderboard[3]} /></div></section>
     <div className="mt-5"><ProUpgradeCard compact /></div>
     {notice && <button onClick={() => setNotice('')} className="fixed bottom-[145px] right-5 z-20 rounded-lg bg-[hsl(var(--secondary))] px-4 py-3 text-xs font-bold text-[hsl(var(--secondary-foreground))] shadow-lg" data-testid="button-dismiss-notice">{notice}</button>}
-    <Button variant="primary" onClick={() => setNotice('Game logging is coming soon. This button is a preview only.')} className="fixed bottom-[88px] right-5 z-10 rounded-full px-4 py-3 lg:bottom-8" data-testid="button-add-game"><Plus size={17} /> Log a game</Button>
+    <Link href="/log-game" className="fixed bottom-[88px] right-5 z-10 rounded-full px-4 py-3 lg:bottom-8"><Button variant="primary"><Plus size={17} /> Log a game</Button></Link>
   </div></div></AppShell>;
 }

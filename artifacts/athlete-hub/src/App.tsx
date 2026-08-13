@@ -7,6 +7,7 @@ import NotFound from '@/pages/not-found';
 import Landing from '@/pages/landing';
 import { Login, Signup } from '@/pages/auth';
 import Dashboard from '@/pages/dashboard';
+import LogGame from '@/pages/log-game';
 import Profile from '@/pages/profile';
 import Collection from '@/pages/collection';
 import Leaderboard from '@/pages/leaderboard';
@@ -29,6 +30,7 @@ function Router() {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/log-game" component={LogGame} />
         <Route path="/profile" component={Profile} />
         <Route path="/collection" component={Collection} />
         <Route path="/leaderboard" component={Leaderboard} />
