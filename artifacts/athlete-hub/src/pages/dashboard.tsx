@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowUpRight, CalendarDays, ChevronRight, Flame, Gamepad2, MoreHorizontal, Plus, Trophy } from 'lucide-react';
-import { Link } from 'wouter'; from 'wouter';
+import { Link } from 'wouter';
 import { useState } from 'react';
 import { achievements, leaderboard, player, recentGame } from '@/data/mock-data';
 import { AchievementCard, AppShell, Button, LeaderboardRow, PlayerCard, ProUpgradeCard, StatCard, XPProgress } from '@/components/athlete-ui';
