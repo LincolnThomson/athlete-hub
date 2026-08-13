@@ -1,4 +1,9 @@
+import { type FormEvent, type ReactNode, useState } from 'react';
+import { ArrowLeft, ArrowRight, Eye, EyeOff, LockKeyhole, Mail, UserRound } from 'lucide-react';
+import { Link, useLocation } from 'wouter';
+import { Brand, Button, AuthFrame } from '@/components/athlete-ui';
 import { supabase } from "../lib/supabase";
+
 export function Login() {
   const [, setLocation] = useLocation();
   const [showPassword, setShowPassword] = useState(false);
